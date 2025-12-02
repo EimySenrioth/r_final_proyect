@@ -1,3 +1,12 @@
+#cargar librerías para árbol de clasificación
+library(summarytools)
+library(psych)
+library(dplyr)
+library(skimr)
+library(rpart.plot)
+library(caret)
+
+# Instalar y cargar librerías para lectura de archivos Excel
 if (!require("readxl")) install.packages("readxl", repos = "https://cloud.r-project.org")
 library(readxl)
 
@@ -11,4 +20,9 @@ df2 <- read_excel(file.path(ruta_carpeta, "Unirmaster_dos.xlsx"))
 head(df1)
 head(df2)
 
-# Realiza un análisis exploratorio básico
+# Realiza un análisis exploratorio básico de los datasets antes de unirlos
+
+#Unir los datasets
+
+#Árboles de desición - Modelo de clasificaciòn
+
